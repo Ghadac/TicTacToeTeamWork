@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="536.0" prefWidth="829.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.GameController">
+   <children>
+      <FlowPane layoutX="20.0" layoutY="115.0" prefHeight="376.0" prefWidth="448.0" translateX="34.0">
+         <children>
+            <Button fx:id="button1" mnemonicParsing="false" prefHeight="118.0" prefWidth="118.0" style="-fx-font-size: 50;" />
+            <Button fx:id="button2" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="118.0" prefWidth="118.0" style="-fx-font-size: 50;" translateX="4.0" />
+            <Button fx:id="button3" layoutX="85.0" layoutY="10.0" mnemonicParsing="false" prefHeight="118.0" prefWidth="118.0" style="-fx-font-size: 50;" translateX="9.0" />
+            <Button fx:id="button4" layoutX="160.0" layoutY="10.0" mnemonicParsing="false" prefHeight="118.0" prefWidth="118.0" style="-fx-font-size: 50;" translateY="4.0" />
+            <Button fx:id="button5" layoutX="10.0" layoutY="85.0" mnemonicParsing="false" prefHeight="118.0" prefWidth="118.0" style="-fx-font-size: 50;" translateX="4.0" translateY="4.0" />
+            <Button fx:id="button6" layoutX="85.0" layoutY="85.0" mnemonicParsing="false" prefHeight="118.0" prefWidth="118.0" style="-fx-font-size: 50;" translateX="9.0" translateY="4.0" />
+            <Button fx:id="button7" layoutX="160.0" layoutY="85.0" mnemonicParsing="false" prefHeight="118.0" prefWidth="118.0" style="-fx-font-size: 50;" translateY="8.0" />
+            <Button fx:id="button8" layoutX="10.0" layoutY="160.0" mnemonicParsing="false" prefHeight="118.0" prefWidth="118.0" style="-fx-font-size: 50;" translateX="4.0" translateY="8.0" />
+            <Button fx:id="button9" layoutX="85.0" layoutY="160.0" mnemonicParsing="false" prefHeight="118.0" prefWidth="118.0" style="-fx-font-size: 50;" translateX="9.0" translateY="8.0" />
+         </children>
+      </FlowPane>
+      <Text fx:id="winnerText" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx: #CCE2CB;" text="Tic-Tac-Toe" textAlignment="CENTER" wrappingWidth="828.9999999999999">
+         <font>
+            <Font size="39.0" />
+         </font>
+      </Text>
+      <FlowPane layoutX="433.0" layoutY="172.0" prefHeight="170.0" prefWidth="348.0" style="-fx-border-color: #000000;" />
+      <Button layoutX="274.0" layoutY="361.0" mnemonicParsing="false" onAction="#restartGame" prefHeight="40.0" prefWidth="120.0" style="-fx-background-color: #28B2FC;" text="Restart" translateX="199.0">
+         <font>
+            <Font size="23.0" />
+         </font></Button>
+      <Button layoutX="284.0" layoutY="371.0" mnemonicParsing="false" onAction="#exitButton" prefHeight="40.0" prefWidth="120.0" style="-fx-background-color: #FC2882;" text="Exit" translateX="365.0" translateY="-11.0">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Button>
+      <Text fx:id="playerx" layoutX="463.0" layoutY="236.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Player X :" translateX="30.0">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Text>
+      <Text fx:id="playery" layoutX="461.0" layoutY="277.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Player O :" translateX="30.0" translateY="17.0">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Text>
+      <Text layoutX="531.0" layoutY="143.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Game Score  ">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Text>
+      <Text fx:id="playerx" layoutX="570.0" layoutY="231.0" strokeType="OUTSIDE" strokeWidth="0.0" text="XXXXXX" translateX="50.0" translateY="5.0" wrappingWidth="92.46044921875">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Text>
+      <Text fx:id="playero" layoutX="570.0" layoutY="280.0" strokeType="OUTSIDE" strokeWidth="0.0" text="XXXXXX" translateX="50.0" translateY="17.0" wrappingWidth="92.46044921875">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
+
